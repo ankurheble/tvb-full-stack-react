@@ -8,4 +8,5 @@ test("it renders children correctly", () => {
   const { container } = render(<Button>{text}</Button>);
 
   expect(container.textContent).toEqual(text);
+  expect(container.firstChild.tagName.toLowerCase()).toEqual("button");
 });

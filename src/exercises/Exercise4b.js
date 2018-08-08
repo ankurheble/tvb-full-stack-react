@@ -10,7 +10,7 @@
  * When a todo item's checkbox is clicked, find
  * the item in the list and toggle it's value.
  *
- * `console.log` the value to check that it works
+ *`console.log` the value to check that it works
  * as expected.
  *
  * NOTE: to "toggle" a value means to flip it;
@@ -21,24 +21,4 @@
 
 import React from "react";
 
-function TodoList(props) {
-  return (
-    <ul>
-      {props.todos.map(todo => {
-        return (
-          <li key={todo.id}>
-            <input
-              type="checkbox"
-              onClick={() => {
-                props.onChecked(todo);
-              }}
-            />
-            {todo.title}
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-
-export default TodoList;
+// export default TodoList;

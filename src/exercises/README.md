@@ -1,7 +1,6 @@
 ## Notes
 
-* To export a component from a file, use the `export` keyword
-  Ex: 
+* To export a component from a file, use the `export` keyword 
 ```js
 function Image () {
   // ...

@@ -24,4 +24,8 @@
 
 import React from "react";
 
-// export default Button;
+function Button(props) {
+  return <button>{props.children}</button>;
+}
+
+export default Button;

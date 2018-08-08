@@ -3,6 +3,15 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
+/**
+ * The exercise files require you to create different
+ * types of components.
+ *
+ * After writing the components and the tests pass,
+ * you have successfully completed the exercise and
+ * may move on to the next one.
+ */
+
 function App() {
   return (
     <div className="App">

@@ -20,12 +20,10 @@ const todos = [
   }
 ];
 
-test.only("it toggles a todo item", () => {
+test("it toggles a todo item", () => {
   const onChecked = jest.fn(item => {
     const todo = todos.find(todo => todo.id === item.id);
     todo.completed = !todo.completed;
-
-    console.log(todo);
   });
 
   const { container } = render(
@@ -43,4 +41,5 @@ test.only("it toggles a todo item", () => {
   );
 
   expect(onChecked).toHaveBeenCalledTimes(1);
+  expect(todos[0].completed).toBe(true);
 });

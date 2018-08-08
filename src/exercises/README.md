@@ -1,4 +1,4 @@
-# ## Notes
+## Notes
 
 * To export a component from a file, use the `export` keyword
   Ex: 

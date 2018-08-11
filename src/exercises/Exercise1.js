@@ -10,5 +10,8 @@
 
 import React from "react";
 
+function Button(props) {
+  return <button onClick={props.onClick}>Click Me</button>;
+}
 // uncomment the line below to export this component
-// export default Button;
+export default Button;

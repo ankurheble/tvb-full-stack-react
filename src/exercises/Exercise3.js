@@ -14,4 +14,14 @@
 
 import React from "react";
 
-// export default Select;
+function Select(props) {
+  return (
+    <select>
+      {props.users.map(user => {
+        return <option key={user.id}>{user.name}</option>;
+      })}
+    </select>
+  );
+}
+
+export default Select;
